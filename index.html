@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Exo2jquery3</title>
+</head>
+<body>
+  <form>
+    <p> Number:<input type="number" name="zero" id="test" value="0" /> </p>
+    <button type="button" name="up" id="btn1">+</button>
+    <button type="button" name="down" id="btn2">-</button>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    //fonction pour afficher le nombre de clic
+    var count = 0;
+    $('#btn1').click(function(){
+      count++;
+      $('#test').val(count);
+    });
+    $('#btn2').click(function(){
+      count--;
+      $('#test').val(count);
+    });
+  </script>
+</body>
+</html>
